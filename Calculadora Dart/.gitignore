@@ -1,0 +1,4 @@
+# Dart Tooling
+.dart_tool/
+.packages
+pubspec.lock
