@@ -24,12 +24,14 @@ dart run bin/calculadora.dart
 
 ### Pin-Pon
 
-Juego de Pin-Pon de dos jugadores ejecutado en la terminal, desarrollado con Dart.
+Juego de Pin-Pon ejecutado en la terminal, desarrollado con Dart (versión 1.1.0).
 
 **Funcionalidades:**
-- Dos jugadores controlan paletas con el teclado (W/S para J1, I/K para J2)
-- Pelota con movimiento y rebotes en bordes y paletas
-- Sistema de puntaje
+- Menú inicial con modos de juego: dos jugadores, contra la IA y Retos
+- Selección de dificultad (Fácil, Medio, Difícil)
+- Velocidad de la pelota progresiva según el puntaje
+- Movimiento fluido de las paletas
+- 4 retos desbloqueables
 - Renderizado en tiempo real usando códigos ANSI
 
 **Ejecución:**
@@ -45,6 +47,7 @@ dart run bin/pin_pon.dart
 | S | Mover paleta J1 abajo |
 | I | Mover paleta J2 arriba |
 | K | Mover paleta J2 abajo |
+| P | Pausar partida |
 | Q | Salir del juego |
 
 ## Requisitos

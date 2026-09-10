@@ -1,6 +1,6 @@
 name: pin_pon
-description: A sample command-line application.
-version: 1.0.0
+description: Juego de pin pon para terminal en Dart con modos 2 jugadores, contra IA y retos.
+version: 1.1.0
 # repository: https://github.com/my_org/my_repo
 
 environment:
