@@ -80,6 +80,10 @@ void main() {
 
 void restaurarTerminal() {
   stdout.write('\x1B[?25h'); // Mostrar cursor
-  stdin.lineMode = true;
-  stdin.echoMode = true;
+  try {
+    stdin.lineMode = true;
+    stdin.echoMode = true;
+  } on StdinException {
+    // Terminal no soporta cambio de modo
+  }
 }
