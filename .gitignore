@@ -1,1 +1,43 @@
 Recursos/
+
+# Configuracion local de IntelliJ IDEA / Android Studio
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Artefactos de compilacion de Flutter y Dart
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# En una app de Flutter SI se versiona pubspec.lock, para que todos
+# instalen exactamente las mismas versiones de las dependencias.
+
+# Artefactos de compilacion de Android
+local.properties
+.gradle/
+captures/
+
+# Archivos que Flutter regenera en cada compilacion
+generated_plugin_registrant.cc
+generated_plugin_registrant.h
+generated_plugins.cmake
+flutter_export_environment.sh
+
+# Artefactos de compilacion de Windows / escritorio
+*.exe
+*.dll
+*.pdb
+*.ilk
+
+# Sistema operativo y editores
+.DS_Store
+Thumbs.db
+.idea/workspace.xml
+*.swp
+.vscode/
