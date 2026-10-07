@@ -41,3 +41,11 @@ Thumbs.db
 .idea/workspace.xml
 *.swp
 .vscode/
+
+# Copias de conflicto de OneDrive / sincronizacion
+*-DESKTOP-*
+*CONFLICT*
+*copiar*
+*Copia*
+*- Copy*
+*([0-9])*
