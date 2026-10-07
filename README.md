@@ -7,10 +7,11 @@ trimestre del ITSU.
 
 | Proyecto | Tecnología | Descripción |
 |----------|-----------|-------------|
-| [Calculadora Dart](Calculadora%20Dart/) | Dart (consola) | Calculadora aritmética con menú, validación de entrada y control de errores |
-| [Pin-Pon](Pin-Pon/) | Dart (consola) | Juego de pin pon con IA, dificultades, retos y velocidad progresiva |
-| [2 Pantallas](Android%20Projects/2%20Pantallas/) | Android, Jetpack Compose | Navegación entre dos pantallas usando estado y callbacks |
-| [3 en raya](Android%20Projects/Aplication%20Test/3%20en%20raya/) | Flutter (multiplataforma) | Tres en Raya contra la máquina o en dos jugadores, con Minimax |
+| [Calculadora Dart](Dart%20Console/Calculadora%20Dart/) | Dart (consola) | Calculadora aritmética con menú, validación de entrada y control de errores |
+| [Pin-Pon](Dart%20Console/Pin-Pon/) | Dart (consola) | Juego de pin pon con IA, dificultades, retos y velocidad progresiva |
+| [2 Pantallas](Android%20Projects/Aplication%20Test/App_Basic_Two_Screens/Two%20Screens/) | Android, Jetpack Compose | Navegación entre dos pantallas usando estado y callbacks |
+| [3 en raya](Android%20Projects/Aplication%20Test/3_en_Raya/3%20en%20raya/) | Flutter (multiplataforma) | Tres en Raya contra la máquina o en dos jugadores, con Minimax |
+| [Pin Pon App](Android%20Projects/Aplication%20Test/Pin_Pon_App/Pin%20Pon/) | Flutter (multiplataforma) | Pin-Pon migrado desde la consola: dos jugadores, contra IA y retos |
 
 ---
 
@@ -27,13 +28,13 @@ multiplicación y división).
 
 **Ejecución:**
 ```bash
-cd "Calculadora Dart"
+cd "Dart Console/Calculadora Dart"
 dart run bin/calculadora.dart
 ```
 
 ---
 
-### Pin-Pon
+### Pin-Pon (consola)
 
 Juego de Pin-Pon ejecutado en la terminal, desarrollado con Dart (versión 1.1.0).
 
@@ -47,7 +48,7 @@ Juego de Pin-Pon ejecutado en la terminal, desarrollado con Dart (versión 1.1.0
 
 **Ejecución:**
 ```bash
-cd Pin-Pon
+cd "Dart Console/Pin-Pon"
 dart run bin/pin_pon.dart
 ```
 
@@ -95,12 +96,38 @@ personalizada, animaciones y una IA que juega usando el algoritmo Minimax.
 
 **Ejecución:**
 ```bash
-cd "Android Projects/Aplication Test/3 en raya"
+cd "Android Projects/Aplication Test/3_en_Raya/3 en raya"
 flutter pub get
 flutter run
 ```
 
 **Plataformas:** Android, Web, Windows y iOS (este último requiere macOS).
+
+---
+
+### Pin Pon App
+
+Juego de Pin-Pon (Pong) multiplataforma hecho con Flutter, migrado desde la
+versión de consola en Dart.
+
+**Funcionalidades:**
+- Dos jugadores en el mismo dispositivo (control táctil por arrastre)
+- Contra la IA con tres dificultades (Fácil, Medio, Difícil)
+- Retos: anotar X puntos o sobrevivir Y segundos
+- Velocidad progresiva de la pelota según el puntaje
+- Pausa y salida en cualquier momento
+- Lógica pura separada de la interfaz (`lib/juego/`)
+
+**Ejecución:**
+```bash
+cd "Android Projects/Aplication Test/Pin_Pon_App/Pin Pon"
+flutter pub get
+flutter run
+```
+
+**Plataformas:** Android, iOS, Web y Windows.
+
+---
 
 ## Requisitos
 
@@ -113,13 +140,18 @@ flutter run
 
 ```
 DAM/
-├── Calculadora Dart/           Consola, un solo archivo
-├── Pin-Pon/                    Consola, código dividido por módulos
+├── Dart Console/
+│   ├── Calculadora Dart/        Consola, un solo archivo
+│   └── Pin-Pon/                 Consola, código dividido por módulos
 ├── Android Projects/
-│   ├── 2 Pantallas/            Android nativo con Compose
 │   └── Aplication Test/
-│       └── 3 en raya/          Flutter multiplataforma
-└── Recursos/                   Material de apoyo (no versionado)
+│       ├── App_Basic_Two_Screens/
+│       │   └── Two Screens/     Android nativo con Compose
+│       ├── 3_en_Raya/
+│       │   └── 3 en raya/       Flutter multiplataforma
+│       └── Pin_Pon_App/
+│           └── Pin Pon/         Flutter multiplataforma
+└── Recursos/                    Material de apoyo (no versionado)
 ```
 
 Cada proyecto tiene su propio `README.md` con el detalle de su implementación.
